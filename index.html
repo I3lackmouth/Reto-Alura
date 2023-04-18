@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador © Jesús Bocanegra </title>   
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <article class="user-interactivity">
+          <header class="encrypt__header">
+            <img src="./images/Logo.png" alt="Logo de Alura" style="padding-bottom: 25px;" />
+            <h1 style="padding-left: 20px;">Encriptador de texto</h1>
+          </header>
+          <form id="encryptForm" class="encrypt-form">
+            <textarea name="userInput" id="userInput" autocomplete="off" placeholder="Encripta tu texto aquí" cols="30" rows="10"></textarea>
+            <span><img src="./images/info.png" width="20" height="20" alt="ícono de información" /> Solo letras minúsculas sin acentos</span>
+          </form>
+          <div class="encrypt-buttons">
+            <button id="encryptBtn" class="encrypt-buttons__encrypt">Encriptar</button>
+            <button id="decryptBtn" class="encrypt-buttons__decrypt">Desencriptar</button>
+          </div>
+        </article>
+        <aside class="encrypted-response">
+          <article id="placeholderInfo">
+            <img src="./images/Muñeco.png" width="250" alt="avatar para los mensajes no encontrados" />
+            <h2 class="placeholder__title">Ningún mensaje fue encontrado</h2>
+            <p id="warning" class="placeholder__text">Ingresa el texto que desees encriptar o desencriptar</p>
+          </article>
+          <article id="decryptedInfo" class="hidden">
+            <p id="decryptedText" class="decrypted-text"></p>
+            <button id="decryptedCopyBtn" class="encrypt-buttons__decrypt">Copiar</button>
+          </article>
+        </aside>
+      </section>      
+        </div>
+      </div>  
+    </main>
+  </body>
+</html>
